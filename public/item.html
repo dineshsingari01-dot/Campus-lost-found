@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Item Details — Campus Lost & Found</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Campus Lost &amp; Found</span>
+    <ul id="nav-links"></ul>
+  </nav>
+  <main class="container">
+    <div id="item-detail" class="card">Loading...</div>
+    <div id="claim-section" class="card hidden">
+      <h2>Submit a Claim</h2>
+      <form id="claim-form">
+        <label>Your Message (proof of ownership)</label>
+        <textarea id="claim-message" required></textarea>
+        <button class="btn mt" type="submit">Submit Claim</button>
+      </form>
+    </div>
+    <div id="claims-list" class="card hidden">
+      <h2>Claims for this item</h2>
+      <div id="claims-container"></div>
+    </div>
+  </main>
+  <script src="/js/api.js"></script>
+  <script src="/js/item.js"></script>
+</body>
+</html>

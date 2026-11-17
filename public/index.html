@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus Lost & Found — Home</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Campus Lost &amp; Found</span>
+    <ul id="nav-links"></ul>
+  </nav>
+  <main class="container">
+    <div class="card">
+      <h1>Find what you lost. Return what you found.</h1>
+      <form id="search-form" class="filters mt">
+        <input type="text" id="keyword" placeholder="Search by keyword..." />
+        <select id="category">
+          <option value="">All Categories</option>
+          <option>Electronics</option><option>Books</option><option>Clothing</option>
+          <option>ID Card</option><option>Keys</option><option>Bag</option><option>Other</option>
+        </select>
+        <input type="text" id="location" placeholder="Location..." />
+        <select id="type">
+          <option value="">Lost &amp; Found</option>
+          <option value="lost">Lost</option>
+          <option value="found">Found</option>
+        </select>
+        <select id="sort">
+          <option value="">Newest First</option>
+          <option value="date_desc">Date: New to Old</option>
+          <option value="date_asc">Date: Old to New</option>
+        </select>
+        <button class="btn" type="submit">Search</button>
+      </form>
+    </div>
+    <h2>Recent Items</h2>
+    <div id="items-grid" class="grid"></div>
+  </main>
+  <script src="/js/api.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>
